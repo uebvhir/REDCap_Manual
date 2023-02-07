@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Gestió d’usuaris | REDCap_copy.knit</title>
+  <meta name="description" content=" " />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Gestió d’usuaris | REDCap_copy.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content=" " />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Gestió d’usuaris | REDCap_copy.knit" />
+  
+  <meta name="twitter:description" content=" " />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="guia-ràpida-entrada-de-dades.html"/>
+<link rel="next" href="gestió-i-creació-de-base-de-dades.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="introducció-al-redcap.html"><a href="introducció-al-redcap.html"><i class="fa fa-check"></i><b>1</b> <strong>Introducció al REDCap</strong></a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introducció-al-redcap.html"><a href="introducció-al-redcap.html#aplicació-redcap"><i class="fa fa-check"></i><b>1.1</b> <strong>Aplicació REDCap</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="introducció-al-redcap.html"><a href="introducció-al-redcap.html#accés-al-sistema"><i class="fa fa-check"></i><b>1.2</b> <strong>Accés al sistema</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="introducció-al-redcap.html"><a href="introducció-al-redcap.html#sollicitud-serveis"><i class="fa fa-check"></i><b>1.3</b> <strong>Sol·licitud serveis</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html"><i class="fa fa-check"></i><b>2</b> <strong>Guia ràpida: Entrada de dades</strong></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html#introducciómodificació-dun-registre"><i class="fa fa-check"></i><b>2.1</b> <strong>Introducció/modificació d’un registre</strong></a></li>
+<li class="chapter" data-level="2.2" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html#visualització-de-les-dades-dashboard"><i class="fa fa-check"></i><b>2.2</b> <strong>Visualització de les dades: Dashboard</strong></a></li>
+<li class="chapter" data-level="2.3" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html#tipus-de-dades"><i class="fa fa-check"></i><b>2.3</b> <strong>Tipus de dades</strong></a></li>
+<li class="chapter" data-level="2.4" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html#maneig-de-queries"><i class="fa fa-check"></i><b>2.4</b> <strong>Maneig de “<em>Queries</em>”</strong></a></li>
+<li class="chapter" data-level="2.5" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html#entrada-doble-de-dades"><i class="fa fa-check"></i><b>2.5</b> <strong>Entrada doble de dades</strong></a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html#data-comparison-tool"><i class="fa fa-check"></i><b>2.5.1</b> <em>Data Comparison Tool</em></a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="guia-ràpida-entrada-de-dades.html"><a href="guia-ràpida-entrada-de-dades.html#registre-dactivitat-logregistros"><i class="fa fa-check"></i><b>2.6</b> <strong>Registre d’activitat: <em>Log/Registros</em></strong></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html"><i class="fa fa-check"></i><b>3</b> <strong>Gestió d’usuaris</strong></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html#alta-dun-usuari"><i class="fa fa-check"></i><b>3.1</b> <strong>Alta d’un usuari</strong></a></li>
+<li class="chapter" data-level="3.2" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html#pregunta-de-recuperació-de-la-clau-daccés"><i class="fa fa-check"></i><b>3.2</b> <strong>Pregunta de recuperació de la clau d’accés</strong></a></li>
+<li class="chapter" data-level="3.3" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html#cas-dús"><i class="fa fa-check"></i><b>3.3</b> <strong>Cas d’ús</strong></a></li>
+<li class="chapter" data-level="3.4" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html#alta-de-més-dun-usuari"><i class="fa fa-check"></i><b>3.4</b> <strong>Alta de més d’un usuari</strong></a></li>
+<li class="chapter" data-level="3.5" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html#rols-dusuari-i-grups-dags"><i class="fa fa-check"></i><b>3.5</b> <strong>Rols d’usuari i grups (DAGs)</strong></a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html#en3"><i class="fa fa-check"></i><b>3.5.1</b> <strong>Tipus de rol</strong></a></li>
+<li class="chapter" data-level="3.5.2" data-path="gestió-dusuaris.html"><a href="gestió-dusuaris.html#creació-de-grups-dags"><i class="fa fa-check"></i><b>3.5.2</b> <strong>Creació de grups (DAGs)</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html"><i class="fa fa-check"></i><b>4</b> <strong>Gestió i Creació de base de dades</strong></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en15"><i class="fa fa-check"></i><b>4.1</b> <strong>Introducció a la creació d’una base de dades</strong></a></li>
+<li class="chapter" data-level="4.2" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en4"><i class="fa fa-check"></i><b>4.2</b> <strong>Secció:</strong> <em>Ajustes principales de Proyecto</em></a></li>
+<li class="chapter" data-level="4.3" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#secció-habilitar-módulos-opcionales-y-personalizaciones"><i class="fa fa-check"></i><b>4.3</b> <strong>Secció:</strong> <em>Habilitar módulos opcionales y personalizaciones</em></a></li>
+<li class="chapter" data-level="4.4" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#secció-diseño-de-instrumentos-de-recolección-de-datos"><i class="fa fa-check"></i><b>4.4</b> <strong>Secció:</strong> <em>Diseño de instrumentos de recolección de datos</em></a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#etiquetes-de-camp"><i class="fa fa-check"></i><b>4.4.1</b> <strong>Etiquetes de camp</strong></a></li>
+<li class="chapter" data-level="4.4.2" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#instruments-com-a-enquesta"><i class="fa fa-check"></i><b>4.4.2</b> <strong>Instruments com a enquesta</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#secció-habilitar-módulos-opcionales-y-personalizaciones-1"><i class="fa fa-check"></i><b>4.5</b> <strong>Secció</strong>: <em>Habilitar módulos opcionales y personalizaciones</em></a></li>
+<li class="chapter" data-level="4.6" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en1"><i class="fa fa-check"></i><b>4.6</b> <strong>Secció</strong>: <em>Definir sus eventos y designar instrumentos para ellos</em></a></li>
+<li class="chapter" data-level="4.7" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en2"><i class="fa fa-check"></i><b>4.7</b> <strong>Secció</strong>: <em>Prueba tu proyecto a fondo</em></a></li>
+<li class="chapter" data-level="4.8" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#mòduls-addicionals-recolección-de-datos"><i class="fa fa-check"></i><b>4.8</b> <strong>Mòduls addicionals</strong>: <em>Recolección de datos</em></a>
+<ul>
+<li class="chapter" data-level="4.8.1" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#accés-a-lenquesta"><i class="fa fa-check"></i><b>4.8.1</b> <strong>Accés a l’enquesta</strong></a></li>
+<li class="chapter" data-level="4.8.2" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#pissarra-destat-de-registres"><i class="fa fa-check"></i><b>4.8.2</b> <strong>Pissarra d’Estat de Registres</strong></a></li>
+<li class="chapter" data-level="4.8.3" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#agregareditar-registres"><i class="fa fa-check"></i><b>4.8.3</b> <strong>Agregar/Editar Registres</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.9" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#mòduls-addicionals-aplicaciones"><i class="fa fa-check"></i><b>4.9</b> <strong>Mòduls addicionals</strong>: <em>Aplicaciones</em></a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en9"><i class="fa fa-check"></i><b>4.9.1</b> <strong><em>Exportación de datos, Reportes y Estadísticas</em></strong></a></li>
+<li class="chapter" data-level="4.9.2" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en8"><i class="fa fa-check"></i><b>4.9.2</b> <strong><em>Herramienta para importar datos</em></strong></a></li>
+<li class="chapter" data-level="4.9.3" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#herramientas-para-comparar-datos"><i class="fa fa-check"></i><b>4.9.3</b> <strong><em>Herramientas para comparar datos</em></strong></a></li>
+<li class="chapter" data-level="4.9.4" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#logregistros"><i class="fa fa-check"></i><b>4.9.4</b> **_Log/Registros**</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#primera-base-de-dades"><i class="fa fa-check"></i><b>4.10</b> <strong>Primera base de dades</strong></a>
+<ul>
+<li class="chapter" data-level="4.10.1" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en7"><i class="fa fa-check"></i><b>4.10.1</b> <strong>Principis generals</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.11" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#en16"><i class="fa fa-check"></i><b>4.11</b> <strong>Validació de la gestió de dades: Validació PQ</strong></a>
+<ul>
+<li class="chapter" data-level="4.11.1" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#definició"><i class="fa fa-check"></i><b>4.11.1</b> <strong>Definició</strong></a></li>
+<li class="chapter" data-level="4.11.2" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#procés"><i class="fa fa-check"></i><b>4.11.2</b> <strong>Procés</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.12" data-path="gestió-i-creació-de-base-de-dades.html"><a href="gestió-i-creació-de-base-de-dades.html#tancament-base-de-dades"><i class="fa fa-check"></i><b>4.12</b> <strong>Tancament base de dades</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="controls-de-qualitat.html"><a href="controls-de-qualitat.html"><i class="fa fa-check"></i><b>5</b> <strong>Controls de qualitat</strong></a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="controls-de-qualitat.html"><a href="controls-de-qualitat.html#gestió-de-queries"><i class="fa fa-check"></i><b>5.1</b> <strong>Gestió de <em>Queries</em></strong></a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="controls-de-qualitat.html"><a href="controls-de-qualitat.html#personal-gestor-del-sistema-de-queries"><i class="fa fa-check"></i><b>5.1.1</b> <strong>Personal gestor del sistema de <em>Queries</em></strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="controls-de-qualitat.html"><a href="controls-de-qualitat.html#en6"><i class="fa fa-check"></i><b>5.2</b> <strong>Implementació de regles personalitzades</strong></a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="controls-de-qualitat.html"><a href="controls-de-qualitat.html#comprovació-de-regles-personalitzades"><i class="fa fa-check"></i><b>5.2.1</b> <strong>Comprovació de regles personalitzades</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="controls-de-qualitat.html"><a href="controls-de-qualitat.html#en5"><i class="fa fa-check"></i><b>5.3</b> <strong>Execució de les regles de control de qualitat</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="definicions-i-abreviatures.html"><a href="definicions-i-abreviatures.html"><i class="fa fa-check"></i><b>6</b> <strong>Definicions i abreviatures</strong></a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><div style="text-align:right;font-size:15px">
+<U>Català</u> <a href="Version2021/REDCap_CAS/introducción-al-redcap.html">Castellano</a> <a href="Version2021/REDCap_ANG/redcap-introduction.html">English</a>
+</div>
+<br><br></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="gestió-dusuaris" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> <strong>Gestió d’usuaris</strong></h1>
+<div id="alta-dun-usuari" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> <strong>Alta d’un usuari</strong></h2>
+<p>Per tal de demanar l’alta d’un usuari cal posar-se en contacte amb la Unitat d’Estadística i Bioinformàtica (UEB) simplement enviar un correu a <a href="mailto:ueb@vhir.org?subject=Alta%20usuari%20RedCAP">l’enllaç que apareix en el web</a> d’accès a REDCap.</p>
+<p><img src="Imatges/imatge_31.png" /></p>
+<p>Quan un usuari sol·licita l’alta al sistema REDCap automàticament rep un correu electrònic a l’adreça facilitada al sistema. Aquesta persona podrà llavors donar-se d’altra a través de l’enllaç que s’adjunti en aquest correu:</p>
+<p><img src="Imatges/imatge_25.png" /></p>
+</div>
+<div id="pregunta-de-recuperació-de-la-clau-daccés" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> <strong>Pregunta de recuperació de la clau d’accés</strong></h2>
+<p>Després d’establir la vostra clau d’accés i, per tant, accedir al sistema, és <strong>molt important</strong> establir la pregunta de recuperació de la clau. Aquesta pregunta ens permetrà recuperar la clau directament, sense haver de fer una petició als administradors del sistema.</p>
+<ul>
+<li>Cal accedir a <em>“My Profile”</em> i prémer l’opció <em>“Reset password recovery question”</em> com s’indica a la imatge.</li>
+</ul>
+<p><img src="Imatges/imatge_26.png" /></p>
+<ul>
+<li>Ens apareix el següent quadre de text que ens pregunta si volem establir aquesta pregunta, on seleccionarem <em>“Reset”</em>.</li>
+</ul>
+<p><img src="Imatges/imatge_27.png" /></p>
+<p>Llavors, ens surt un quadre de diàleg similar al següent on ens dóna una bateria de possibles preguntes per establir la nostra pregunta de recuperació.</p>
+<p><img src="Imatges/imatge_28.png" /></p>
+<p>*Una vegada hem elegit una opció, introduïm la resposta a recordar per recuperar la clau d’accés en cas d’oblidar-la i guardem la pregunta.</p>
+<p><img src="Imatges/imatge_29.png" /></p>
+</div>
+<div id="cas-dús" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> <strong>Cas d’ús</strong></h2>
+<p>Una vegada <a href="https://servirredcap.vhir.org/redcap/">accediu al sistema</a> podem observar les bases de dades a les quals l’usuari te accés. En aquest cas, l’usuari pot accedir a diverses bases de dades.</p>
+<ul>
+<li>Estudi:
+<ul>
+<li>Assaig clínic que està construït com a estudi clàssic.</li>
+<li>En la taula ens indica el nombre de registres camps, formularis i l’estat del projecte.</li>
+<li>Si té una forma de “clau anglesa” indica que el projecte està en mode desenvolupament i es poden canviar les dades i els formularis sense problemes. Si està amb una marca verda, com de vist i plau, indica que el projecte està en mode producció, i no és fàcil de canviar el contingut dels qüestionaris.</li>
+</ul></li>
+</ul>
+<p><img src="Imatges/imatge_32.png" /></p>
+<p>Si seleccionem l’estudi, ens apareix la pantalla general del REDCap:</p>
+<p><img src="Imatges/imatge_33.png" /></p>
+<p>En la part dreta està l’àrea de visió mentre que en la part esquerra de la pantalla apareix el menú principal del projecte. En aquest últim podem observar les següents opcions seleccionables:</p>
+<ul>
+<li><strong><em>Bases de Datos</em></strong>: Torna al llistat de les bases de dades que pot seleccionar l’usuari.</li>
+<li><strong>Inici de Projecte</strong>: Per defecte, és la pantalla que surt on hi ha un accés ràpid a algunes de les tasques i el panel del projecte amb unes estadístiques bàsiques del projecte i els usuaris que hi tenen accés.</li>
+<li><strong>Configuració del projecte</strong>: Si l’usuari té els permisos pertinents, permet canviar les característiques i configuració dels CRFs.</li>
+<li><strong>Pissarra de <em>Estados de registro</em></strong>: Per accedir a una matriu de subjectes qüestionaris per poder accedir ràpidament al quadern d’interès. A més a més, indica l’estat de recollida de cada CRF.</li>
+<li><strong><em>Agregar/Editar Registros</em></strong>: Permet afegir casos nous o editar casos ja existents.</li>
+<li><strong><em>Exportación de datos. Reportes y Estadísticas</em></strong>: Permet exportar dades pels principals programes d’anàlisi i veure informes que s’hagin establert.</li>
+<li><strong><em>Calidad de los datos y resolver problemas</em></strong>: Permet processar una sèrie de qüestions per detectar inconsistències o errors en la introducció de dades, així com encetar i resoldre quèries.</li>
+</ul>
+</div>
+<div id="alta-de-més-dun-usuari" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> <strong>Alta de més d’un usuari</strong></h2>
+<p>Una vegada tingueu accés a REDCap, podreu gestionar l’alta de nous usuaris a la plataforma.</p>
+<p>Caldrà descarregar-se la <a href="Dades/UserImportTemplate.csv">plantilla de gestió d’usuaris</a> disponible al sistema de REDCap.</p>
+<p><img src="Imatges/imatge_3.png" /></p>
+<p>S’hauran d’indicar els següents camps:</p>
+<table class="table" style="font-size: 13px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #993489 !important;">
+Camp
+</th>
+<th style="text-align:left;color: white !important;background-color: #993489 !important;">
+Descripció
+</th>
+<th style="text-align:left;color: white !important;background-color: #993489 !important;">
+Exemple
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Username
+</td>
+<td style="text-align:left;">
+Nom de l’usuari. No pot fer servir espais ni signes d’accentuació. Per conveni es fa servir el nom i 1er cognom de l’usuari separats per un punt
+</td>
+<td style="text-align:left;">
+eugenia.miro
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+First name
+</td>
+<td style="text-align:left;">
+Nom de la persona. Pot fer servir espais i signes d’accentuació
+</td>
+<td style="text-align:left;">
+Eugènia
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Last name
+</td>
+<td style="text-align:left;">
+Cognom de la persona. Pot fer servir espais i signes d’accentuació
+</td>
+<td style="text-align:left;">
+Miró
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Email address
+</td>
+<td style="text-align:left;">
+Correu electrònic de contacte
+</td>
+<td style="text-align:left;">
+<a href="mailto:eugenia.miro@vhir.org" class="email">eugenia.miro@vhir.org</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Institution ID
+</td>
+<td style="text-align:left;">
+Nom de la institució a la que pertany aquest usuari
+</td>
+<td style="text-align:left;">
+HUVH
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sponsor username
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Expiration
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Comments
+</td>
+<td style="text-align:left;">
+nom de l’usuari que dona d’alta a aquesta persona
+</td>
+<td style="text-align:left;">
+ueb
+</td>
+</tr>
+</tbody>
+</table>
+<p>Quan el document estigui omplert, cal guardar-lo en format <em>.csv</em> i fer-lo arribar al personal de la UEB.</p>
+</div>
+<div id="rols-dusuari-i-grups-dags" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> <strong>Rols d’usuari i grups (DAGs)</strong></h2>
+<div id="en3" class="section level3" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> <strong>Tipus de rol</strong></h3>
+<p>Hi ha tres tipus de rol previstos a cada estudi: <em>Investigador, monitor i entrador de dades</em>.</p>
+<table class="table" style="font-size: 13px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;color: white !important;background-color: #993489 !important;">
+Rol
+</th>
+<th style="text-align:left;color: white !important;background-color: #993489 !important;">
+Assignació
+</th>
+<th style="text-align:left;color: white !important;background-color: #993489 !important;">
+Privilegis
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Investigador
+</td>
+<td style="text-align:left;">
+Gestor/s del projecte
+</td>
+<td style="text-align:left;">
+Assignar drets d’usuaris i fer canvis de disseny
+Veure i editar dades
+Crear i executar regles de qualitat
+Crear i modificar registres
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Monitor
+</td>
+<td style="text-align:left;">
+Revisor/s de contingut i qualitat de les dades del projecte
+</td>
+<td style="text-align:left;">
+Veure dades
+Crear i editar regles de qualitat
+Obrir i tancar quèries
+Bolquejar registres
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Entrador de dades
+</td>
+<td style="text-align:left;">
+Persones que introdueixen les dades en el projecte
+</td>
+<td style="text-align:left;">
+Veure i editar dades
+Executar regles de qualitat
+Respondre a quèries
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="creació-de-grups-dags" class="section level3" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> <strong>Creació de grups (DAGs)</strong></h3>
+<p>En els estudis multicèntrics és habitual generar grups d’usuaris de manera que els membres d’un grup que hagin d’entrar dades, només vegin les dades introduïdes del seu centre i no d’un altre. Els investigadors principals i monitors, però podran veure’ls tots.</p>
+<p>Els investigadors indicaran al gestor de la base de dades (preferiblement amb full de càlcul):</p>
+<ul>
+<li>El <strong>nom del grup</strong>.</li>
+<li>El <strong>nom dels usuaris</strong> que pertanyen a cada grup.</li>
+<li>El <strong>rol de cada usuari</strong>.</li>
+</ul>
+<p>Una vegada generat el grup, s’assignarà a cada usuari el rol i el grup en la secció de gestió d’usuaris del REDCap</p>
+<p>Si es necessita introduir un grup durant el període de producció o en cas excepcional que algun privilegi hagi de ser assignat,l’investigador o la persona en qui delegui, enviarà un correu amb les especificacions al gestor de la base de dades.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="guia-ràpida-entrada-de-dades.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gestió-i-creació-de-base-de-dades.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
